@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <title>gamis danira premium</title>
+    </head>
+<body>
+    <div class="header">GAMIS DANIRA PREMIUM</div>
+    <div class="flash-sale">FLASH SALE! DISKON BESAR-BESARAN!</div>
+    <div class="discount">Hanya untuk hari ini, jangan sampai kehabisan!</div>
+    <div class="discount-50">DISKON 50%!</div>
+    <div class="price">
+        <span class="old-price">Rp 199.000</span>
+    </div>
+    <div class="new-price-text">Sekarang hanya</div>
+    <div class="price">
+        <span class="new-price">Rp 99.000</span>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <img src="gambar 0.png" alt="Gamis 1">
+            <div class="why-choose">
+                <h3>Kenapa Harus Pilih Gamis Danira?</h3>
+                <ul>
+                    <li>Bahan Crinkel Airflow nyaman dipakai seharian.</li>
+                    <li>Desain elegan, cocok untuk berbagai acara.</li>
+                    <li>Jahitan rapi dan berkualitas, tahan lama.</li>
+                    <li>Harga spesial, hanya hari ini.</li>
+                </ul>
+            </div>
+            <img src="gambar 1.jpg" alt="Gamis 2">
+            <div class="size-chart">
+                <h3>Ukuran Tersedia</h3>
+                <ul>
+                    <li><strong>S</strong> - LD: 95 cm | PB: 135 cm</li>
+                    <li><strong>M</strong> - LD: 99 cm | PB: 135 cm</li>
+                    <li><strong>L</strong> - LD: 105 cm | PB: 137 cm</li>
+                    <li><strong>XL</strong> - LD: 108 cm | PB: 138 cm</li>
+                    <li><strong>XXL</strong> - LD: 112 cm | PB: 138 cm</li>
+                </ul>
+            </div>
+           
+            <div class="carousel">
+                <div class="carousel-inner">
+                        <img src="gambar 2.png" alt="Gamis 4">
+                        <img src="gambar 3.png" alt="Gamis 5">
+                        <img src="gambar 10.png" alt="Gamis 6">
+                        <img src="gambar 5.png" alt="Gamis 7">
+                        <img src="gambar 6.png" alt="Gamis 8">
+                        <img src="gambar 7.png" alt="Gamis 9">
+                        <img src="gambar 8.png" alt="Gamis 10">
+                        <img src="gambar 9.png" alt="Gamis 11">
+                        <img src="gambar 4.png" alt="Gamis 11">
+                </div>
+            </div>
+            <div class="text-box">
+                <span class="highlight">ISI FORM DIBAWAH INI</span><br>
+                <span class="small-text">UNTUK PEMESANAN</span>
+            </div>
+            <br>
+            <div class="text-box promo">PROMO TERBATAS</div>
+            <div class="arrow-container">
+                <img src="panah 1.jpg" class="arrow" alt="Panah ke bawah">
+                <img src="panah 2.jpg" class="arrow" alt="Panah ke bawah">
+                <img src="panah 2.jpg" class="arrow" alt="Panah ke bawah">
+            </div>
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-group">
+                        <input type="text" id="nama" placeholder="Nama Lengkap">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="telepon" placeholder="Nomor Telepon / WhatsApp">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="alamat" placeholder="Alamat Lengkap">
+                    </div>
+            <div class="container">
+                <div class="form-group">
+                    <select id="provinsi" onchange="loadKota()">
+                        <option value="">Pilih Provinsi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="kota" onchange="loadKecamatan()">
+                        <option value="">Pilih Kota/Kabupaten</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="kecamatan">
+                        <option value="">Pilih Kecamatan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <select id="warna">
+                    <option value="">Pilih Warna</option>
+                    <option>Denim</option>
+                    <option>Coksu</option>
+                    <option>Teracota</option>
+                    <option>Navy</option>
+                    <option>Sage</option>
+                    <option>Coklat</option>
+                    <option>Marun</option>
+                    <option>Pink</option>
+                    <option>Burgundy</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="ukuran">
+                    <option value="">Pilih Ukuran</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+            </div>
+            <!-- <div class="form-group">
+                <button onclick="">Hitung Ongkir</button>
+            </div>
+            <div class="ongkir-result" id="ongkir-result"></div>
+        </div> -->
+            <div class="cta-buttons">
+            <button onclick="kirimPesanan()">Pesan Sekarang</button>
+            <a href="https://wa.me/628988166105" class="whatsapp-btn" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA"> Hubungi via WhatsApp
+            </a>
+        </div>
+        <div class="cod-images">
+            <img class="img" src="cod_2.png" alt="COD Image 1">
+            <img class="img-2" src="logo-bank.jpg" alt="bank Image 2">
+        </div>
+        <div class="testimonials">
+            <h3>Testimoni Pelanggan</h3>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <img src="testi 1.png" alt="User">
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <img src="testi 3.png" alt="User">
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <img src="testi 4.png" alt="User">
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <img src="testi 5.png" alt="User">
+                </div>
+            </div>
+            <script src="main.js"></script>
+                
+            </body>
+            </head>
